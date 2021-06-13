@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --desaturated-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --font-main: rgb(59, 55, 55);
+
+  --card-radius: 10px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  line-height: 1.5;
+  color: var(--font-main);
+}
+
+.light {
+  color: hsl(0, 0%, 59%);
+}
+
+.name,
+.headings {
+  font-size: 14px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Positioning and background */
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 50vh, top 50vh left 50vw;
+}
+
+.card {
+  width: 350px;
+  height: 380px;
+  border-radius: var(--card-radius);
+  margin: auto;
+  background-color: whitesmoke;
+  box-shadow: 40px 25px 103px -23px rgba(60, 75, 76, 0.69);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pic {
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+  width: 100%;
+  background: red;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/bg-pattern-card.svg") center;
+}
+
+.pic > img {
+  border-radius: 50%;
+  border: 4px solid white;
+  width: 100px;
+  position: relative;
+  top: 50%;
+}
+
+.identity {
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.age {
+  margin-left: 10px;
+  font-size: inherit;
+}
+
+.stats {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.numbers {
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-top: 1px solid rgb(194, 193, 193);
+}
+
+.data {
+  text-align: center;
+}
